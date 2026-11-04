@@ -317,7 +317,7 @@ footer{padding:36px 0 48px}
       </div>
       <div class="position-box">
         <h3>このページで配る「無料版」の位置づけ</h3>
-        <p>無料版は、この構想の中から <b>「サンプルを使う・手作業で直す」部分だけを切り出した版</b>です。<b>AIで作る機能は、今回の無料版には入っていません</b>。AI生成は本来、無料の構想です。今回入っていないだけで、<b>今後の無料版で提供予定</b>です。</p>
+        <p>無料版は、この構想の中から <b>「サンプルを使う・手作業で直す」部分だけを切り出した版</b>です。<b>AIで作る機能は、今回の無料版には入っていません</b>。AI生成は<b>本来は無料の構想です。今回の無料版には入っていません</b>。</p>
         <p>有料版との違いは、AIで作ることではありません。<b>できたアプリ側の高度な機能</b>（承認、ユーザー管理・権限、LAN共有など）だけが、有料版の範囲です。</p>
         <p>その代わり、AIのアカウント設定は一切不要で、app.json・実行基盤・印刷といった土台の部分は本体と同じものを使います。まず無料版で「自分のPCで業務アプリが動く」感触を確かめてもらうための版です。今回入っていないものの一覧は <a href="#cannot">「今回の無料版に入っていないもの」</a> にまとめています。</p>
       </div>
@@ -330,9 +330,9 @@ footer{padding:36px 0 48px}
       <div class="sec-head">
         <p class="num">仕組みの図解</p>
         <h2 id="diagram-h">文章から、アプリができるまで</h2>
-        <p>全体の流れを1枚にしました。今回お渡しする範囲は実線の流れ（サンプルを選ぶ・手で直す・使う）です。文章からAIが作る流れは、今後の無料版で提供予定として点線で添えました。有料版との違いは、できたアプリで使える機能の方です。</p>
+        <p>全体の流れを1枚にしました。今回お渡しする範囲は実線の流れ（サンプルを選ぶ・手で直す・使う）です。文章からAIが作る流れは、無料の構想として点線で添えました。有料版との違いは、できたアプリで使える機能の方です。</p>
       </div>
-      <div class="diagram" role="img" aria-label="システム図解：今回の提供範囲は、サンプル8件を選んで開き、手作業のデザイン画面で直してapp.jsonに残し、実行基盤を通してできたアプリを使う流れです。文章の要件をAIがapp.jsonにする流れは、今後提供予定（無料の構想）として点線で添えています。承認・ユーザー管理・LAN共有は、有料版の機能として別に示しています。すべて自分のPCの中だけで完結します">
+      <div class="diagram" role="img" aria-label="システム図解：今回の提供範囲は、サンプル8件を選んで開き、手作業のデザイン画面で直してapp.jsonに残し、実行基盤を通してできたアプリを使う流れです。文章の要件をAIがapp.jsonにする流れは、無料の構想（今回の無料版には入っていません）として点線で添えています。承認・ユーザー管理・LAN共有は、有料版の機能として別に示しています。すべて自分のPCの中だけで完結します">
         <svg viewBox="0 0 1120 728" role="presentation" aria-hidden="true">
           <defs>
             <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="f-ai"></path></marker>
@@ -341,8 +341,8 @@ footer{padding:36px 0 48px}
           <rect x="6" y="6" width="1108" height="716" rx="10" class="f-card s-ink" stroke-width="2"></rect>
           <text x="30" y="42" font-size="19" font-weight="700">あなたのPCの中だけ</text>
           <text x="1090" y="42" text-anchor="end" font-size="13" class="t-ink3">アプリの定義もデータも、このPCの外には出ません</text>
-          <rect x="30" y="58" width="308" height="28" rx="14" class="f-card s-line2" stroke-width="1.5" stroke-dasharray="5 4"></rect>
-          <text x="184" y="77" text-anchor="middle" font-size="13.5" font-weight="700" class="t-ink2">今後提供予定（無料の構想）</text>
+          <rect x="30" y="58" width="470" height="28" rx="14" class="f-card s-line2" stroke-width="1.5" stroke-dasharray="5 4"></rect>
+          <text x="265" y="77" text-anchor="middle" font-size="13.5" font-weight="700" class="t-ink2">無料の構想（今回の無料版には入っていません）</text>
           <path d="M52,104 H146 L172,128 V196 H52 Z" fill="none" class="s-line2" stroke-width="1.8" stroke-dasharray="6 4"></path>
           <path d="M146,104 V128 H172" fill="none" class="s-line2" stroke-width="1.8" stroke-dasharray="6 4"></path>
           <text x="112" y="140" text-anchor="middle" font-size="14.5" font-weight="700" class="t-ink2">文章で書く要件</text>
@@ -363,7 +363,7 @@ footer{padding:36px 0 48px}
           <circle cx="584" cy="179" r="6" fill="#357a4c"></circle>
           <text x="598" y="184" font-size="12" class="t-ink2">緑（通過）　テストは実装より先に作り、一度は赤になることを確かめます</text>
           <path d="M320,200 C330,258 468,254 524,300" fill="none" class="s-line2" stroke-width="3" stroke-dasharray="6 5" marker-end="url(#arrGray)"></path>
-          <text x="238" y="256" text-anchor="middle" font-size="12" class="t-ink3">今後、app.json へつながる</text>
+          <text x="238" y="256" text-anchor="middle" font-size="12" class="t-ink3">構想では app.json へつながる</text>
           <rect x="24" y="226" width="1072" height="322" rx="14" class="f-ailight s-ai" fill-opacity="0.45" stroke-width="2.5"></rect>
           <rect x="44" y="213" width="356" height="27" rx="3" class="f-card s-ai" stroke-width="1.5"></rect>
           <text x="222" y="231" text-anchor="middle" font-size="13.5" font-weight="700" class="t-ai">今回の提供範囲 — サンプルから作る</text>
@@ -413,11 +413,11 @@ footer{padding:36px 0 48px}
           <text x="960" y="424" text-anchor="middle" font-size="12.5" class="t-ink2">伝票 ・ 予定表 ・ 縦横の表</text>
           <text x="960" y="446" text-anchor="middle" font-size="12.5" class="t-ink2">帳票の印刷 ・ PDF出力</text>
           <text x="44" y="504" font-size="13" class="t-ink2">サンプルは、出来上がった app.json のそのままの見本です。開いて中を見ることが、使い方の説明になります。</text>
-          <text x="44" y="528" font-size="13" class="t-ink2">作り方（サンプル／手作業／今後のAI）が違っても、直した内容の行き先は同じ app.json です。</text>
+          <text x="44" y="528" font-size="13" class="t-ink2">作り方（サンプル／手作業／AI）が違っても、直した内容の行き先は同じ app.json です。</text>
           <text x="30" y="602" font-size="13.5" class="t-ink2">無料と有料の違いは、「作ること」ではなく</text>
           <text x="30" y="626" font-size="13.5" class="t-ink2">「できたアプリで使える機能」です。</text>
           <text x="30" y="656" font-size="13.5" font-weight="700">AI生成は有料機能ではありません。</text>
-          <text x="30" y="680" font-size="13.5" class="t-ink2">今後の無料版で提供予定です。</text>
+          <text x="30" y="680" font-size="13.5" class="t-ink2">本来は無料の構想です。今回の無料版には入っていません。</text>
           <rect x="560" y="572" width="536" height="112" rx="8" class="f-card s-ink" stroke-width="1.5"></rect>
           <rect x="584" y="588" width="118" height="24" rx="12" class="f-warnbg s-warn" stroke-width="1.2"></rect>
           <text x="643" y="604" text-anchor="middle" font-size="12.5" font-weight="700" class="t-warn">有料版の機能</text>
@@ -431,7 +431,7 @@ footer{padding:36px 0 48px}
         </svg>
         <div class="d-legend">
           <span><b>太い実線の矢印</b> … 今回の提供範囲の流れ</span>
-          <span><b>点線</b> … 今後提供予定（無料の構想）</span>
+          <span><b>点線</b> … 無料の構想（今回の無料版には入っていません）</span>
           <span><b>有料版の機能</b> … できたアプリ側に足される機能</span>
         </div>
       </div>
@@ -449,7 +449,7 @@ footer{padding:36px 0 48px}
       <div class="local-grid">
         <article class="local-item"><p class="ln">一　置き場所</p><h3>データはPCの中だけ</h3><p>業務データも、アプリの定義である <b>app.json</b> も、あなたのPCの中だけに置かれます。<b>作者のサーバーに預ける形ではなく、PCの外に送信されることはありません。</b>ネットにつながなくても、ふだんの業務はそのまま使えます。</p></article>
         <article class="local-item"><p class="ln">二　登録不要</p><h3>会員登録なしで使えます</h3><p>AiAppMakerを使うために、<b>作者のサービスへ会員登録したり、アカウントを作ったりする必要はありません。</b>ダウンロードして、自分のPCでそのまま開けます。ログインして使うWebサービスとは、ここが違います。</p></article>
-        <article class="local-item"><p class="ln">三　守る仕掛け</p><h3>見せたくない項目を守る</h3><p>項目ごとに<b>暗号化</b>ができます。マイナンバーなど見せたくない項目は、暗号化して守ります。さらに<b>バックアップと版の記録</b>があるので、間違えて変えてしまっても、前の状態に戻せます。</p></article>
+        <article class="local-item"><p class="ln">三　守る仕掛け</p><h3>見せたくない項目を守る</h3><p>項目ごとに<b>暗号化</b>ができます。マイナンバーなど見せたくない項目は、暗号化して守ります。なお、暗号化した項目は<b>絞り込みと並び替えには使えません</b>。また、<b>CSVとExcelに書き出すときは、暗号化した項目も中身がそのまま出ます</b>。さらに<b>バックアップと版の記録</b>があるので、間違えて変えてしまっても、前の状態に戻せます。</p></article>
       </div>
       <div class="local-why">
         <h3>なぜ、ローカルアプリにこだわったのか</h3>
@@ -658,7 +658,7 @@ footer{padding:36px 0 48px}
         <tr><th scope="row">計算する</th><td>数量×単価、日付の差などの<b>計算項目</b>。日付だけでなく時刻まで持てます。</td></tr>
         <tr><th scope="row">出し入れする</th><td><b>CSV / Excel</b> からの取り込みと、CSV / Excel への出力。今のExcelのデータを移す入口になります。</td></tr>
         <tr><th scope="row">印刷する</th><td><b>単票・連票の印刷</b>と<b>PDF出力</b>。帳票デザインで直した形のまま刷れます。</td></tr>
-        <tr><th scope="row">守る</th><td>項目ごとの<b>暗号化</b>、<b>バックアップと版の記録</b>（前の状態に戻せます）。<b>締め処理</b>にも対応します。</td></tr>
+        <tr><th scope="row">守る</th><td>項目ごとの<b>暗号化</b>、<b>バックアップと版の記録</b>（前の状態に戻せます）。<b>締め処理</b>にも対応します。なお、暗号化した項目は絞り込みと並び替えには使えません。CSVとExcelに書き出すときは、暗号化した項目も中身がそのまま出ます。</td></tr>
       </table>
       <div class="design-grid">
         <div class="design-item"><h3>無料版で組み替えられる範囲</h3><p>無料版では、サンプルに表や項目を足すことはできません。できるのは、画面と帳票の見た目（項目の並びや列の幅など）の組み替えだけです。</p></div>
@@ -674,10 +674,10 @@ footer{padding:36px 0 48px}
       <div class="sec-head">
         <p class="num">今回の無料版に入っていないもの</p>
         <h2 id="cannot-h">入っていないものは、先に書いておきます</h2>
-        <p>今回の無料版は、<a href="#concept">元々の構想</a>の中から「サンプルを使う・手で直す」部分だけを切り出した簡易版です。入っていないものには、時期の違いがあります。AIで作る機能は本来無料の構想で、今後の無料版で提供予定です。有料版との違いは、できたアプリ側の高度な機能だけです。</p>
+        <p>今回の無料版は、<a href="#concept">元々の構想</a>の中から「サンプルを使う・手で直す」部分だけを切り出した簡易版です。AIで作る機能は本来は無料の構想です。今回の無料版には入っていません。有料版との違いは、できたアプリ側の高度な機能だけです。</p>
       </div>
       <div class="cannot-box">
-        <div><h3>今後の無料版で提供予定（無料の構想）</h3><ul><li><b>AIで要件から作る機能</b> — 言葉で頼んでアプリを作る・直す機能。今回の無料版には入っていませんが、有料版の機能ではありません</li></ul></div>
+        <div><h3>無料の構想（今回の無料版には入っていません）</h3><ul><li><b>AIで要件から作る機能</b> — 言葉で頼んでアプリを作る・直す機能。今回の無料版には入っていませんが、有料版の機能ではありません</li></ul></div>
         <div><h3>有料版の機能</h3><ul><li><b>承認</b> — 申請して、誰かが承認する流れ</li><li><b>ユーザー管理・権限</b> — 権限と、見せる相手の切り替え</li><li><b>ログイン</b> — 利用者がログインして使う形</li><li><b>LAN共有</b> — 同僚のPCから同じアプリにつなぐ使い方</li><li><b>作ったアプリの書き出し</b> — 作ったアプリを取り出して配る形</li></ul></div>
       </div>
       <p class="rule-note"><b>その代わり、今回の無料版でできること：</b>AIの設定なしで<b>ダウンロードしてすぐ</b>使えます。サンプル8件をそのまま自分の業務に使い、画面と帳票の見た目は<b>手作業のデザイン画面</b>で組み替えられます。データは自分のPCの中だけにあり、外部に送られません。</p>
@@ -708,9 +708,9 @@ footer{padding:36px 0 48px}
   <section id="faq" aria-labelledby="faq-h">
     <div class="wrap">
       <div class="sec-head"><p class="num">よくある質問</p><h2 id="faq-h">ダウンロードの前に</h2></div>
-      <details class="faq-item"><summary>本当に無料ですか？</summary><div class="a"><p>はい、無料版は無料です。今回の無料版に入っていないのは、AIで作る機能、承認、ユーザー管理・権限、ログイン、LAN共有、作ったアプリの書き出しの6つです。AIで作る機能は今後の無料版で提供予定で、それ以外の5つは有料版の範囲です。</p></div></details>
-      <details class="faq-item"><summary>本来のAiAppMakerと、無料版は何が違うのですか？</summary><div class="a"><p>本来のAiAppMakerは、要件を文章で書くとAIが仕様・例・テストを作り、アプリにしていく道具です。今回の無料版はその中から「サンプルを使う・手作業で直す」部分だけを切り出した版で、AIで作る機能は入っていません。AI生成は本来無料の構想で、今後の無料版で提供予定です。有料版との違いは、できたアプリ側の高度な機能（承認、ユーザー管理・権限、LAN共有など）だけです。</p></div></details>
-      <details class="faq-item"><summary>AIのアカウントは要りますか？</summary><div class="a"><p>要りません。今回の無料版はAIを使わない版です。ClaudeやCodexなどのアカウント設定なしで、ダウンロードしてそのまま使えます。なお、今後の無料版でAI生成を使う場合も、AI（Claude / Codex）の契約と利用料は本ソフトには含まれません。ご自身でご契約ください。</p></div></details>
+      <details class="faq-item"><summary>本当に無料ですか？</summary><div class="a"><p>はい、無料版は無料です。今回の無料版に入っていないのは、AIで作る機能、承認、ユーザー管理・権限、ログイン、LAN共有、作ったアプリの書き出しの6つです。AIで作る機能は本来は無料の構想です（今回の無料版には入っていません）。それ以外の5つは有料版の範囲です。</p></div></details>
+      <details class="faq-item"><summary>本来のAiAppMakerと、無料版は何が違うのですか？</summary><div class="a"><p>本来のAiAppMakerは、要件を文章で書くとAIが仕様・例・テストを作り、アプリにしていく道具です。今回の無料版はその中から「サンプルを使う・手作業で直す」部分だけを切り出した版で、AIで作る機能は入っていません。AI生成は本来は無料の構想です。今回の無料版には入っていません。有料版との違いは、できたアプリ側の高度な機能（承認、ユーザー管理・権限、LAN共有など）だけです。</p></div></details>
+      <details class="faq-item"><summary>AIのアカウントは要りますか？</summary><div class="a"><p>要りません。今回の無料版はAIを使わない版です。ClaudeやCodexなどのアカウント設定なしで、ダウンロードしてそのまま使えます。なお、AI生成を使う場合も、AI（Claude / Codex）の契約と利用料は本ソフトには含まれません。ご自身でご契約ください。</p></div></details>
       <details class="faq-item"><summary>データはどこにありますか？</summary><div class="a"><p>自分のPCの中だけです。サーバへ送られることはありません。その代わり、バックアップもご自身でお願いしています。</p></div></details>
       <details class="faq-item"><summary>MacとWindows、どちらでも使えますか？</summary><div class="a"><p>Mac版は対応しています。Windows版は実機確認中のため、対応しているとはまだ言えません。確認が済み次第、案内します。初回起動時の警告は、MacではGatekeeper、WindowsではSmartScreen（青い画面）が出る場合があります。当面は署名なしで配布するためです。署名と公証は、製品に目処が立ってから対応する予定です。</p></div></details>
       <details class="faq-item"><summary>困ったときのサポートはありますか？</summary><div class="a"><p>個別のサポートはありません。不具合の報告は歓迎していて、Issueでのみ受け付けています。</p></div></details>
