@@ -210,7 +210,7 @@ footer{padding:36px 0 48px}
 .foot-legal a{color:var(--ink3)}
 .faq-item .a ul{margin:0;padding-left:1.4em}
 .faq-item .a li+li{margin-top:6px}
-.faq-item .a p+ul,.faq-item .a ul+p{margin-top:8px}
+.faq-item .a p+ul,.faq-item .a ul+p,.faq-item .a p+p{margin-top:8px}
 /* lightbox */
 .lightbox{position:fixed;inset:0;background:rgba(20,19,16,.92);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}
 .lightbox.open{display:flex}
@@ -287,6 +287,7 @@ footer{padding:36px 0 48px}
         </div>
         <p class="cta-note">MacとWindowsに対応 ・ 無料</p>
         <p class="cta-note cta-note-warn">はじめて開くときは、Macでは「“AiAppMaker” は開いていません」、Windowsでは「Windows によって PC が保護されました」という警告が出ます。署名なしで配布しているためで、危険という意味ではありません。押すのは、Macでは「ゴミ箱に入れる」でなく「完了」、Windowsでは「詳細情報」から「実行」です。そのあとの開き方は、<a href="https://github.com/enishiray/AiAppMaker#readme" target="_blank" rel="noopener">配布ページ</a>の「はじめて開くときの警告について」にあります。</p>
+        <p class="cta-note cta-note-warn">ウイルスの検査の結果は、よくある質問の「<a href="#faq-virus">ウイルスの検査はしていますか？</a>」にあります。</p>
       </div>
       <div class="hero-shots">
         <figure class="shot">
@@ -722,7 +723,7 @@ footer{padding:36px 0 48px}
       <details class="faq-item"><summary>MacとWindows、どちらでも使えますか？</summary><div class="a"><p>どちらでも使えます。Macは macOS 13 以降、Windowsは Windows 10 / 11（64 ビット版）です。はじめて開くときは、Macでは「“AiAppMaker” は開いていません」、Windowsでは「Windows によって PC が保護されました」という警告が出ます。署名なしで配布しているためで、危険という意味ではありません。開き方は<a href="https://github.com/enishiray/AiAppMaker#readme" target="_blank" rel="noopener">配布ページ</a>の「はじめて開くときの警告について」にあります。</p></div></details>
       <details class="faq-item"><summary>動作するOSの条件はありますか？</summary><div class="a"><p>対応するOSは、macOS 13 以降と、Windows 10 / 11（64 ビット版）です。ダウンロードは、<a href="https://github.com/enishiray/AiAppMaker#readme" target="_blank" rel="noopener">配布ページ</a>からだけにしてください。ほかのサイトや、メールで届いたファイルは開かないでください。</p></div></details>
       <details class="faq-item"><summary>アプリは、どこに置けばよいですか？</summary><div class="a"><p>iCloud、OneDrive、Dropbox、Google ドライブなど、同期するフォルダにはアプリを置かないでください。アプリのデータは、使っている間に何度も書き換わります。同期の仕組みが同時にそのファイルを書き換えると、データが壊れることがあります。書類（Windows ではドキュメント）フォルダ自体が同期の対象になっている場合は、新しいアプリを作るときに「保存先」で、同期しない場所を選んでください。2台のPCで同じアプリを同時に開くこともしないでください。1台のPCで使う版です。アプリのフォルダを別のPCへ移すと、暗号化した項目があるアプリは、そのままでは開けません。見本では、工務店の協力会社の「口座番号」と、サロンの顧客の「アレルギーと肌トラブルの注意」が、初めから暗号化されています。移すときの手順など、詳しくは<a href="https://github.com/enishiray/AiAppMaker#readme" target="_blank" rel="noopener">配布ページ</a>を見てください。</p></div></details>
-      <details class="faq-item"><summary>ウイルスの検査はしていますか？</summary><div class="a"><p>配布している 3 つのファイルを、VirusTotal（外部のウイルス検査サービス）で調べています。結果は次のページで見られます。</p><ul><li><a href="https://www.virustotal.com/gui/file/74ea9cbba4ef5c88765a0a49e51584e9c6970e3e7fee1385bead75336a89d00c" target="_blank" rel="noopener">Mac の dmg の検査結果</a></li><li><a href="https://www.virustotal.com/gui/file/e8fe2bf3e7562849acdeef4222da32465b0f298a058476a3533163b9f13599ac" target="_blank" rel="noopener">Mac の zip の検査結果</a></li><li><a href="https://www.virustotal.com/gui/file/594724e60ef5c017cb1df5c7a681652fc698a4dd027851eb656f41a6101c8a21" target="_blank" rel="noopener">Windows の exe の検査結果</a></li></ul><p>署名の無い配布物のため、お使いのウイルス対策ソフトが、誤って警告を出すことがあります。ダウンロードは、配布ページからだけにしてください。</p></div></details>
+      <details class="faq-item" id="faq-virus"><summary>ウイルスの検査はしていますか？</summary><div class="a"><p>配布している 3 つのファイルを、VirusTotal（ウイルストータル）で調べています。VirusTotal は、世界の 70 ほどのウイルス対策ソフトの会社の検査を、1 度にまとめて受けられる無料のサービスです。Google のグループが運営しています。だれでも結果のページを見られるので、作者の言葉ではなく、外の検査の結果で確かめられます。</p><p>下のリンクを押すと、VirusTotal のサイト（virustotal.com）が新しいタブで開きます。ページは英語です。何もダウンロードされず、検査の結果を見るだけのページです。上の方の丸の中に「0 / 62」のような数が出ます。左の数が、悪いと判定した会社の数です。0 なら、どの会社も問題を見つけていません。ウイルス対策ソフトは毎日更新されるので、見る日によって数が変わることがあります。リンクの先は、いつも最新の結果です。</p><ul><li><a href="https://www.virustotal.com/gui/file/74ea9cbba4ef5c88765a0a49e51584e9c6970e3e7fee1385bead75336a89d00c" target="_blank" rel="noopener">Mac 用の dmg の検査結果（virustotal.com）</a></li><li><a href="https://www.virustotal.com/gui/file/e8fe2bf3e7562849acdeef4222da32465b0f298a058476a3533163b9f13599ac" target="_blank" rel="noopener">Mac 用の zip の検査結果（virustotal.com）</a></li><li><a href="https://www.virustotal.com/gui/file/594724e60ef5c017cb1df5c7a681652fc698a4dd027851eb656f41a6101c8a21" target="_blank" rel="noopener">Windows 用の exe の検査結果（virustotal.com）</a></li></ul><p>署名の無い配布物のため、お使いのウイルス対策ソフトが、誤って警告を出すことがあります。ダウンロードは、配布ページからだけにしてください。</p></div></details>
       <details class="faq-item"><summary>使用許諾の要点は？</summary><div class="a"><ul><li>AiAppMaker は無料で使えます。会社や事務所の仕事にも使えます。</li><li>AiAppMaker を書き換えて配ること、ファイルを再配布すること、自分の製品やサービスの一部として配ること、プログラムを解析すること（逆コンパイル、逆アセンブルなど）は、許可していません。紹介するときは、<a href="https://github.com/enishiray/AiAppMaker#readme" target="_blank" rel="noopener">配布ページ</a>のアドレスを教えてください。</li><li>AiAppMaker で作ったアプリと、入力したデータの権利は、利用者のものです。見本から作ったアプリも自由に使えます。</li><li>現状のまま提供し、保証はしません。</li><li>全文は<a href="assets/license.html">使用許諾</a>にあります。</li></ul></div></details>
       <details class="faq-item"><summary>使用許諾、更新の記録、不具合の報告は、どこにありますか？</summary><div class="a"><p><a href="assets/license.html">使用許諾</a>は、このページの中にあります。<a href="https://github.com/enishiray/AiAppMaker/blob/main/CHANGELOG.md" target="_blank" rel="noopener">更新の記録</a>と<a href="https://github.com/enishiray/AiAppMaker/issues" target="_blank" rel="noopener">不具合の報告（Issue）</a>は、<a href="https://github.com/enishiray/AiAppMaker#readme" target="_blank" rel="noopener">配布ページ</a>（GitHub の enishiray/AiAppMaker）にあります。メールでのお問い合わせは、<a href="mailto:support@kakeizupro.com">support@kakeizupro.com</a> です。</p></div></details>
       <details class="faq-item"><summary>困ったときのサポートはありますか？</summary><div class="a"><p>個別のサポートは行いません。不具合の報告は、GitHub の <a href="https://github.com/enishiray/AiAppMaker/issues" target="_blank" rel="noopener">Issue</a>（だれでも読める報告の場所）か、メール（<a href="mailto:support@kakeizupro.com">support@kakeizupro.com</a>）で受け付けています。Issue には、会社の情報、本物のデータ、個人の情報を書かないでください。そういう内容はメールで送ってください。</p></div></details>
@@ -768,6 +769,18 @@ footer{padding:36px 0 48px}
   document.getElementById('lb-close').addEventListener('click',close);
   lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
   document.addEventListener('keydown',function(e){ if(e.key==='Escape') close(); });
+  function openTarget(h){
+    if(!h||h.length<2) return;
+    var id; try{ id=decodeURIComponent(h.slice(1)); }catch(err){ return; }
+    var t=document.getElementById(id);
+    if(t&&t.tagName==='DETAILS') t.open=true;
+  }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest?e.target.closest('a[href^="#"]'):null;
+    if(a) openTarget(a.getAttribute('href'));
+  });
+  window.addEventListener('hashchange',function(){ openTarget(location.hash); });
+  openTarget(location.hash);
 })();
 </script>
 </body>
